@@ -1,0 +1,7 @@
+{
+  "name": "ai-choice/api",
+  "description": "AI Choice Backend",
+  "require": {
+    "php": ">=8.1"
+  }
+}
