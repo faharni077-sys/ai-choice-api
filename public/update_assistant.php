@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, PUT");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 // Support both POST body and raw PUT/POST JSON
 $raw = file_get_contents("php://input");

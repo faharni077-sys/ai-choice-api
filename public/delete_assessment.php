@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, DELETE");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 $raw = file_get_contents("php://input");
 if (!empty($raw)) {

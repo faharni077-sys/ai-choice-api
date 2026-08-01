@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 $assistant_id = intval($_POST['assistant_id'] ?? 0);
 $criteria_id  = intval($_POST['criteria_id']  ?? 0);

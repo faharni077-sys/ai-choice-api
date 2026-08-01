@@ -2,7 +2,7 @@
 
 header("Content-Type: application/json");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';

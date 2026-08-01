@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 $user_id   = intval($_POST['user_id']   ?? 0);
 $full_name = trim($_POST['full_name'] ?? '');

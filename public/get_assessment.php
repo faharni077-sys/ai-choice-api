@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 $assistant_id = $_GET['assistant_id'] ?? null;
 $criteria_id  = $_GET['criteria_id']  ?? null;

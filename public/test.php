@@ -1,6 +1,6 @@
 <?php
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 echo json_encode([
     "success" => true,

@@ -4,7 +4,7 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET");
 
-include "config/database.php";
+include __DIR__ . "/../config/database.php";
 
 // ================================================================
 // SAW Algorithm Implementation (Simple Additive Weighting)
